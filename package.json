@@ -1,0 +1,22 @@
+{
+  "name": "mindbetter-frontend",
+  "version": "1.0.0",
+  "description": "Front end for MindBetter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bettersg/MindBetter-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bettersg/MindBetter-Frontend/issues"
+  },
+  "homepage": "https://github.com/bettersg/MindBetter-Frontend#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
