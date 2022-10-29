@@ -1,0 +1,47 @@
+ul {
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+  }
+li {
+    list-style-type: none;
+    padding: 0 1rem;
+  }
+li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color:white;
+    font-weight: 800;
+  }
+
+table{
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+td{
+  padding: 0.5rem;
+}
+
+.header{
+  border-bottom: 1px black solid;
+}
+
+.inner-table{
+  border: none;
+}
+
+.nested-headers{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nested-header{
+  display: inline-flex;
+  padding: 1rem;
+}
+
+.navbar{
+    background-color: black;
+}
