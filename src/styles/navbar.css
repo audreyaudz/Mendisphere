@@ -1,0 +1,116 @@
+/* Navbar */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600;700&display=swap");
+
+p {
+  margin: 0;
+}
+
+.flex-row-vcenter-hsb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row-vstart-hstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row-vcenter-hstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row-vcenter-hcenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar {
+  padding: 19px 79px;
+  box-sizing: border-box;
+  background-color: rgba(248, 248, 248, 1);
+  width: flex;
+}
+
+.logo {
+  padding: 9px;
+  box-sizing: border-box;
+  background-color: rgba(221, 221, 221, 1);
+  height: 100%;
+}
+
+.txt-221 {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 127%;
+  color: rgba(92, 92, 92, 1);
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.menu-links {
+  height: fit-content;
+}
+
+.navigation-links {
+  margin-right: 60px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.txt-783 {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 127%;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-right: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.txt-31010 {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 127%;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+}
+
+.login-signup {
+  padding: 7px 31px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(115, 115, 115, 1);
+  height: 100%;
+}
+
+.txt-615 {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 1);
+  word-wrap: break-word;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}

@@ -1,0 +1,82 @@
+/* Footer */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+p {
+  margin: 0;
+}
+
+.flex-row-vstart-hcenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-col-hstart-vstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row-vstart-hstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer {
+  padding: 79px 159px;
+  box-sizing: border-box;
+  background-color: rgba(248, 248, 248, 1);
+  width: 1440px;
+  height: 476.08px;
+}
+
+.about-mindbetter {
+  padding: 0px 39px;
+  margin-right: 48px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.txt-768 {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 127%;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-bottom: 32px;
+}
+
+.frame-14 {
+  height: 256.08px;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  flex: 1;
+  padding: 0px 39px;
+  box-sizing: border-box;
+  width: 742px;
+  height: fit-content;
+}
+
+.txt-891 {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 127%;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-right: 80px;
+}
+
+.frame-18 {
+  width: 489px;
+  height: 100%;
+}
