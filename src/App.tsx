@@ -2,6 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { Route, Routes } from "react-router-dom";
 import Landing from "./features/landing/Landing";
 import LoginPage from "./features/login/login-page";
+import ProfileSetupPage from "./features/registration/components/profile-setup-page";
 import RegistrationPage from "./features/registration/registration-page";
 import UserDashboardPage from "./features/user-dashboard/user-dashboard-page";
 import { AuthProvider } from "./services/firebase/authProvider";
@@ -15,6 +16,7 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="registration" element={<RegistrationPage />} />
           <Route path="dashboard" element={<UserDashboardPage />} />
+          <Route path="profile-setup" element={<ProfileSetupPage />} />
         </Routes>
       </AuthProvider>
     </ChakraProvider>);
