@@ -3,7 +3,6 @@ import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import ForgotPassword from './forgot-password'
 import Signup from './sign-up'
-import GoogleSignInButton from './google-sign-in-button'
 import SignInButton from './sign-in-button'
 
 export default function LoginForm() {
@@ -63,9 +62,9 @@ export default function LoginForm() {
             <Box>
                 <Box>
                     <SignInButton email={email} password={password} />
-                    <Box>
+                    {/* <Box>
                         <GoogleSignInButton />
-                    </Box>
+                    </Box> */}
                 </Box>
                 <Signup />
             </Box>
