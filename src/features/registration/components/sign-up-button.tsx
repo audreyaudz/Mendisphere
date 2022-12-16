@@ -25,13 +25,15 @@ export default function SignUpButton(LoginCredentials: LoginCredentials){
         console.log(`sign in button clicked ${LoginCredentials.email}, ${LoginCredentials.password}`)
         try{
             setLoading(true);
-            let userCred: UserCredential = await signUp(LoginCredentials.email, LoginCredentials.password);
-            let user: User = userCred.user
-            let token: string = await user.getIdToken();
-            console.log(`Authentication success userid: ${user.uid}, ${token}`);
-            authRequest.userName = user.uid;
-            console.log('Routing to user dashboard page.');
-            navigate("/dashboard");
+            // let userCred: UserCredential = await signUp(LoginCredentials.email, LoginCredentials.password);
+            // let user: User = userCred.user
+            // let token: string = await user.getIdToken();
+            // console.log(`Authentication success userid: ${user.uid}, ${token}`);
+            // authRequest.userName = user.uid;
+
+            console.log("Received credentials, awaiting profile completion.")
+            console.log('Routing to profile setup page.');
+            navigate("/profile-setup");
         } catch(error: unknown) {
             let errorMessage = 'error.unknown';
             if (typeof error === 'string') {
