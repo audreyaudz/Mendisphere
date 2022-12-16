@@ -1,4 +1,5 @@
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { StepsStyleConfig as Steps } from 'chakra-ui-steps';
 import { Route, Routes } from "react-router-dom";
 import Landing from "./features/landing/Landing";
 import LoginPage from "./features/login/login-page";
@@ -7,9 +8,15 @@ import RegistrationPage from "./features/registration/registration-page";
 import UserDashboardPage from "./features/user-dashboard/user-dashboard-page";
 import { AuthProvider } from "./services/firebase/authProvider";
 
+const theme = extendTheme({
+  components: {
+    Steps,
+  },
+});
+
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Landing />} />
