@@ -3,7 +3,7 @@ import { StepsStyleConfig as Steps } from 'chakra-ui-steps';
 import { Route, Routes } from "react-router-dom";
 import Landing from "./features/landing/Landing";
 import LoginPage from "./features/login/login-page";
-import ProfileSetupPage from "./features/registration/components/profile-setup-page";
+import ProfileSetupPage from "./features/registration/profile-setup-page";
 import RegistrationPage from "./features/registration/registration-page";
 import UserDashboardPage from "./features/user-dashboard/user-dashboard-page";
 import { AuthProvider } from "./services/firebase/authProvider";

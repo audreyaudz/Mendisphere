@@ -63,7 +63,7 @@ export default function NavigationBar(){
 
                         <Center w="1.2vw" h="5vh"/>        
                             
-                            <NavigationButton backgroundColor="#192873" navigationLink="" buttonText="Sign up" height="6vh" width="9vw"/>
+                            <NavigationButton backgroundColor="#192873" navigationLink="/registration" buttonText="Sign up" height="6vh" width="9vw"/>
                            
                     </Center>
 

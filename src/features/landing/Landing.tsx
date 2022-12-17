@@ -1,4 +1,4 @@
-import {Box, Flex, StackDivider, VStack} from '@chakra-ui/react'
+import {Box, VStack} from '@chakra-ui/react'
 import Footer from './components/Footer';
 import FrontPage from './components/FrontPage';
 import NavigationBar from './components/NavigationBar';
