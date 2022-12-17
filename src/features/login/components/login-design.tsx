@@ -8,7 +8,7 @@ export default function LoginDesign(){
             <Center minH="10em"></Center>
            
             <Center minH="10em">
-                <Image src="/images/casual-life-3d-female-sitting-on-the-floor-with-cup-in-hand-and-laptop-on-leg.png"></Image>
+                <Image src="/images/login.png"></Image>
             </Center>
         </VStack>
     )
