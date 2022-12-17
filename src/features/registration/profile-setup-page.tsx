@@ -1,6 +1,8 @@
-import { Box, Button, Flex, Heading, Spacer, StackDivider, VStack } from "@chakra-ui/react";
+import { Button, Flex, Heading, Spacer, StackDivider, VStack } from "@chakra-ui/react";
 import { Step, Steps, useSteps } from "chakra-ui-steps"
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { instanceOfLoginCredentials } from "../../data/auth/loginCredentials";
 import OrgInfoForm from "./components/org-info-form";
 import PersonalInfoForm from "./components/personal-info-form";
 import SignUpWaiting from "./components/sign-up-waiting";
@@ -23,15 +25,14 @@ export default function ProfileSetupPage() {
 
     // retrieve the login credentials to be used by the auth provider
     // for sign up
-    //const { state } = useLocation();
-    //console.log(state)
+    const { state } = useLocation();
 
-    // console.log("No credentials passed. Redirecting to signup");
-    // useEffect(() => {
-    //     if (state === null || !instanceOfLoginCredentials(state)) {
-    //         navigate('/registration');
-    //     }
-    // })
+    useEffect(() => {
+        if (state === null || !instanceOfLoginCredentials(state)) {
+            console.log("No credentials passed. Redirecting to signup");
+            navigate('/registration');
+        }
+    })
 
 
     return (
@@ -96,7 +97,7 @@ export default function ProfileSetupPage() {
                 ) :
                 (
                     <VStack className="formSize">
-                        <SignUpWaiting />
+                        <SignUpWaiting email={state.email} password={state.password} validated={state.validated}/>
                     </VStack>)}
 
         </VStack>

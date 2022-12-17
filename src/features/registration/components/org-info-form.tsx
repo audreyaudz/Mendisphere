@@ -1,4 +1,4 @@
-import { FormLabel, Grid, GridItem, Input, Select, Text, Textarea } from "@chakra-ui/react";
+import { FormLabel, Grid, GridItem, Input, Select, Text } from "@chakra-ui/react";
 
 export default function OrgInfoForm() {
     return (
