@@ -1,15 +1,15 @@
-.setupHeader{
+.setupHeader {
     margin-top: 34px;
     margin-left: 48px;
     margin-right: 34px;
 }
 
-.setupHeading{
+.setupHeading {
     font-weight: 700;
     font-size: 24px;
 }
 
-.nextButton{
+.nextButton {
     width: 178px;
     height: 48px;
     font-weight: 700;
@@ -18,7 +18,7 @@
     color: #FFFFFF;
 }
 
-.backButton{
+.backButton {
     width: 178px;
     height: 48px;
     font-weight: 700;
@@ -27,13 +27,149 @@
     color: #192873;
 }
 
-.formSize{
+.formSize {
     padding-top: 95px;
     padding-left: 128px;
     padding-right: 128px;
 }
 
-.formHeading{
+.stepTitle {
     font-weight: 700;
     font-size: 32px;
+    justify-content: left;
+    padding-bottom: 57px;
+}
+
+.formHeading {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.formDescription {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.formSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+    gap: 10px;
+
+    height: 48px;
+
+    /* Neutral/neutral-surface */
+
+    background: #F5F5F5;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.formInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 12px;
+    gap: 10px;
+
+    height: 48px;
+
+    /* Neutral/neutral-surface */
+
+    background: #F5F5F5;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.formTitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: -0.015em;
+
+    /* Neutral/neutral-secondary */
+
+    color: #707070;
+}
+
+.loadingTitle {
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.015em;
+    padding-bottom: 32px;
+
+    /* Neutral/neutral-primary */
+
+    color: #333333;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.loadingSubTitle {
+    width: 379px;
+    height: 38px;
+
+    /* Title/title-sm */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    /* Neutral/neutral-primary */
+
+    color: #333333;
+    /* Inside auto layout */
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.loadingInfo {
+    width: 379px;
+    height: 45px;
+
+    /* Body/body-xs */
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    /* Neutral/neutral-secondary */
+
+    color: #707070;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
