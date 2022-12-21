@@ -1,0 +1,28 @@
+version: '3.8'            # Version 3.8 is quite new and should work
+
+services:
+  app:                    # The name of the service, can be anything
+    image: gcp-emulator-suite # Declares which image to use
+    build:               # Declares where to build if image is not found
+      context: .
+      dockerfile: Dockerfile
+      #args:
+        #FIREBASE_PROJECT_ID: mindbetter-bettersg
+        #FIREBASE_TOKEN:  
+    environment:
+      FIREBASE_PROJECT_ID: mindbetter-bettersg
+      FIREBASE_TOKEN: 1//0g19DuLpgYCYqCgYIARAAGBASNwF-L9IrxIAK8f5lpqtJlvoXppUhpqoMA9bDKp4350b8AimTBI_ShJEH937yW42mHLcb-vIhdnk
+
+
+    ports:                # Declares the ports to publish
+      - "127.0.0.1:4000:4000" #Emulator Suite UI
+      - "127.0.0.1:9099:9099" #Authentication
+      - "127.0.0.1:5001:5001" #Cloud Functions
+      - "127.0.0.1:8080:8080" #Cloud Firestore
+      - "127.0.0.1:9199:9199" #Cloud Storage for Firebase
+      - "127.0.0.1:5000:5000" #Firebase Hosting
+      - "127.0.0.1:8085:8085" #Pub/Sub
+      - "127.0.0.1:9299:9299" #EventArc
+      - "127.0.0.1:9000:9000" #Realtime Database
+   # volumes:
+   #   - ./:/gcp_emulator_suite_docker/src:rw
